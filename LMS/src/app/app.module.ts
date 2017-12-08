@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app.routing';
+import { Ng2BootstrapModule } from "ng-bootstrap"
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { AppRoutingModule, routingComponents } from './app.routing';
   ],
   imports: [
     BrowserModule,
-     AppRoutingModule
+    AppRoutingModule,
+    Ng2BootstrapModule.forRoot()
   ],
   providers: [],
    bootstrap: [AppComponent]
