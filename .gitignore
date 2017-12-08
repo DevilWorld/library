@@ -119,3 +119,6 @@ ClientBin/
 *.[Pp]ublish.xml
 *.pfx
 *.publishsettings
+
+# angular dependencies
+node_modules/
