@@ -1,5 +1,33 @@
 <div class="container">
-  <label id="lblBookName" for="txtBookName">Book Name</label>
-  <input id="txtBookName" type="text" class="form-control">
-  <button class="btn btn-primary">Save</button>
+  
+    <div class="form-group">
+      <div class="col-md-6">
+        <label id="lblBookName" for="txtBookName" class="col-form-label">Book Name</label>
+        <input id="txtBookName" type="text" class="form-control" [value]="bookName">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6">
+        <label id="lblAuthor" for="cmbAuthor" class="col-form-label">Author</label>
+        <input id="cmbAuthor" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+          <label id="lblTotalCopies" for="txtTotalCopies" class="col-form-label">Total Copies</label>
+          <input id="txtTotalCopies" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+          <div class="col-md-6">
+            <label id="lblAvailableCopies" for="txtAvailableCopies" class="col-form-label">Available Copies</label>
+            <input id="txtAvailableCopies" type="text" class="form-control">
+          </div>
+        </div>
+    <div class="form-group">
+      <div class="col-md-7 float-right">
+        <button class="btn btn-primary" (click)="getBooks()">Save</button>
+      </div>
+    </div>
+  
 </div>
