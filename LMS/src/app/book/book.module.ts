@@ -8,7 +8,6 @@ import { BooksService } from './services/booksService';
     CommonModule
   ],
   declarations: [AddBookComponent],
-  providers: [BooksService],
   exports: [AddBookComponent]
 })
 export class BookModule { }
