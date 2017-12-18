@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home/home.component';
 import { AddBookComponent } from './book/add-book/add-book.component';
 import { BooksService } from './book/services/booksService';
 import { AddAuthorComponent } from './author/add-author/add-author.component';
+import { AuthorService } from './author/services/author.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { AddAuthorComponent } from './author/add-author/add-author.component';
     Ng2BootstrapModule.forRoot(),
     HttpModule
   ],
-  providers: [BooksService],
+  providers: [BooksService, AuthorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

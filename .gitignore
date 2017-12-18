@@ -122,3 +122,6 @@ ClientBin/
 
 # angular dependencies
 node_modules/
+
+.vs
+packages
