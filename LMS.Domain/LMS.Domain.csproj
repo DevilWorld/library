@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Repository\IAuthorRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\Repository\" />
+    <ProjectReference Include="..\LMS.Domain.Models\LMS.Domain.Models.csproj">
+      <Project>{05400d8c-92d0-49f7-b4d8-93dc23f01fba}</Project>
+      <Name>LMS.Domain.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
