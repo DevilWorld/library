@@ -226,6 +226,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LMS.Domain.Models\LMS.Domain.Models.csproj">
+      <Project>{05400D8C-92D0-49F7-B4D8-93DC23F01FBA}</Project>
+      <Name>LMS.Domain.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LMS.Domain\LMS.Domain.csproj">
+      <Project>{e77e2e68-2aae-4517-b162-012a2be04b79}</Project>
+      <Name>LMS.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
