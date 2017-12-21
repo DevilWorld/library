@@ -18,6 +18,8 @@ namespace LMS.Api.Controllers
         {
             _authorService = authorService;
         }
+
+        [Route("add")]
         public IHttpActionResult Post(Author author)
         {
             _authorService.AddAuthor(author);
