@@ -16,8 +16,10 @@ namespace LMS.Api.App_Start
             var builder = new ContainerBuilder();
 
             builder.RegisterAssemblyTypes(typeof(IAuthorRepository).Assembly)
-                    .AsImplementedInterfaces().InstancePerLifetimeScope();            
-            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+                    .AsImplementedInterfaces().InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(typeof(AuthorRepository).Assembly)
+                .AsImplementedInterfaces().InstancePerLifetimeScope();
+            builder.RegisterApiControllers(typeof(WebApiApplication).Assembly);
 
             var container = builder.Build();
             

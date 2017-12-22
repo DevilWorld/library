@@ -1,5 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
 import { AuthorService } from '../services/author.service';
+import { Author } from '../Author';
 
 @Component({
   selector: 'app-add-author',
@@ -8,9 +10,9 @@ import { AuthorService } from '../services/author.service';
 })
 export class AddAuthorComponent implements OnInit {
 
-  firstName: string;
-  middleName: string;
-  lastName: string;
+  firstName: string = '';
+  middleName: string = '';
+  lastName: string = '';
 
   private result: any;
 
@@ -21,8 +23,21 @@ export class AddAuthorComponent implements OnInit {
   }
 
   addAuthor() {
-    this._authorService.addAuthor().subscribe(
-      data => { this.result = data }
+
+    let author: Author = { 
+                    FirstName: this.firstName, 
+                    MiddleName: this.middleName, 
+                    LastName: this.lastName, 
+                    CreatedBy: 'System',
+                    CreatedDate: new Date(),
+                    ModifiedBy: 'System',
+                    ModifiedDate: new Date(),
+                    Active: true
+                };
+
+    this._authorService.addAuthor(author).subscribe(
+      data => { this.result = data },
+      error => console.log(error)
     )
   };
 
