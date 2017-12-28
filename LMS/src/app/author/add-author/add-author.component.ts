@@ -13,6 +13,7 @@ export class AddAuthorComponent implements OnInit {
   firstName: string = '';
   middleName: string = '';
   lastName: string = '';
+  gender: string = '';
 
   private result: any;
 
@@ -27,7 +28,8 @@ export class AddAuthorComponent implements OnInit {
     let author: Author = { 
                     FirstName: this.firstName, 
                     MiddleName: this.middleName, 
-                    LastName: this.lastName, 
+                    LastName: this.lastName,
+                    GenderId: 1, //this.gender,
                     CreatedBy: 'System',
                     CreatedDate: new Date(),
                     ModifiedBy: 'System',

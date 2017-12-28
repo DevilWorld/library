@@ -8,6 +8,10 @@
     [ModifiedBy]   VARCHAR (30) NULL,
     [ModifiedDate] DATETIME     NULL,
     [Active]       BIT          NOT NULL,
-    CONSTRAINT [pk_author_authorId] PRIMARY KEY CLUSTERED ([AuthorId] ASC)
+    [GenderId]     INT          NULL,
+    CONSTRAINT [pk_author_authorId] PRIMARY KEY CLUSTERED ([AuthorId] ASC),
+    CONSTRAINT [fk_author_gender_genderId] FOREIGN KEY ([GenderId]) REFERENCES [dbo].[Gender] ([GenderId])
 );
+
+
 

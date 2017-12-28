@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Mapping\AuthorMap.cs" />
+    <Compile Include="Data\Mapping\GenderMap.cs" />
     <Compile Include="LmsDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\AuthorRepository.cs" />

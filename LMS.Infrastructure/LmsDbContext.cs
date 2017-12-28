@@ -16,6 +16,7 @@ namespace LMS.Infrastructure
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new AuthorMap());
+            modelBuilder.Configurations.Add(new GenderMap());
         }
     }
 }
