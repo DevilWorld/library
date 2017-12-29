@@ -1,4 +1,4 @@
-
+import { GenderListComponent } from './../../shared/gender-list/gender-list.component';
 import { Component, OnInit } from '@angular/core';
 import { AuthorService } from '../services/author.service';
 import { Author } from '../Author';

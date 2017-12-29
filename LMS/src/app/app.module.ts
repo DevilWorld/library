@@ -11,6 +11,7 @@ import { AddBookComponent } from './book/add-book/add-book.component';
 import { BooksService } from './book/services/booksService';
 import { AddAuthorComponent } from './author/add-author/add-author.component';
 import { AuthorService } from './author/services/author.service';
+import { GenderListComponent } from './shared/gender-list/gender-list.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AuthorService } from './author/services/author.service';
     routingComponents,
     HomeComponent,
     AddBookComponent,
-    AddAuthorComponent
+    AddAuthorComponent,
+    GenderListComponent
   ],
   imports: [
     BrowserModule,
