@@ -12,6 +12,7 @@ import { BooksService } from './book/services/booksService';
 import { AddAuthorComponent } from './author/add-author/add-author.component';
 import { AuthorService } from './author/services/author.service';
 import { GenderListComponent } from './shared/gender-list/gender-list.component';
+import { SharedService } from './shared/services/shared.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { GenderListComponent } from './shared/gender-list/gender-list.component'
     Ng2BootstrapModule.forRoot(),
     HttpModule
   ],
-  providers: [BooksService, AuthorService],
+  providers: [BooksService, AuthorService, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

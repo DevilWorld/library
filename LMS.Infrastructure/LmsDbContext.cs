@@ -8,10 +8,11 @@ namespace LMS.Infrastructure
     {
         public LmsDbContext():base("name=LMSConnectionString")
         {
-
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Author> Authors { get; set; }
+        public virtual DbSet<Gender> Genders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
